@@ -1,0 +1,206 @@
+//----------------------------------------------------//
+// Inputs & Form & Controls				       		  //
+//----------------------------------------------------//
+
+label {
+  display: block;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Inputs
+//----------------------------------------------------//
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select,
+.input {
+  background-color: #ffecd2;
+  border: 1px solid #5c2811;
+  color: $mainFontColor;
+  font-size: 12px;
+  line-height: $mainFontHeight;
+  padding: 4px 30px 4px 10px;
+  width: 100%;
+  display: block;
+  transition: all .3s ease-in-out;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  position: relative;
+  @include placeholderColor(#8b604d);
+  &:focus {
+    outline: none;
+  }
+}
+#search{
+  position: relative;
+}
+.button-search{
+  width: 19px;
+  height: 19px;
+  content: url("../img/search.png");
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  z-index: 100;
+}
+//
+//textarea {
+//  height: 150px;
+//}
+
+//input[type="file"] {
+//  display: none;
+//  & + label {
+//    display: block;
+//    background: #fff;
+//    font-size: 14px;
+//    line-height: 24px;
+//    padding: 25px 15px;
+//    color: #969696;
+//    text-align: center;
+//    border: 1px dashed #c4c4c4;
+//    transition: .2s ease-in-out;
+//    &:hover {
+//      border-color: #696969;
+//      background: #e9e9e9;
+//    }
+//  }
+//}
+
+//----------------------------------------------------//
+// SELECT [INPUT]																			//
+//----------------------------------------------------//
+//select {
+//  display: block;
+//  //@include clearSelect;
+//  transition: none;
+//  background-position: right 25px center;
+//  background-repeat: no-repeat;
+//  background-image: url('../img/sprite/retina/2x/select-down.png');
+//  background-size: 29px 17px;
+//  background-color: #fff;
+//  &:focus {
+//    background-image: url('../img/sprite/retina/2x/select-up.png');
+//  }
+//}
+//
+
+
+// Buttons
+//----------------------------------------------------//
+//button,
+//.btn {
+//  text-align: center;
+//  vertical-align: top;
+//  font-weight: $mainFontWeight;
+//  font-size: $mainFontSize;
+//  line-height: $mainFontHeight;
+//  padding: 7px 20px;
+//  text-transform: uppercase;
+//  background: #e22b37;
+//  color: #fff;
+//  border: 0;
+//  border-radius: 0;
+//  position: relative;
+//  transition: all .3s ease-in-out;
+//  width: 100%;
+//  display: block;
+//  &:hover,
+//  &.active {
+//    color: #fff;
+//    background: #af0c17;
+//  }
+//  &:focus {
+//    position: relative;
+//    top: 1px;
+//  }
+//  &.disabled,
+//  &[disabled="disabled"],
+//  &[disabled] {
+//    background: #ccc;
+//    color: #aaa;
+//    cursor: not-allowed;
+//  }
+//}
+
+// Checkbox
+//----------------------------------------------------//
+//input[type="checkbox"] {
+//  position: absolute;
+//  left: -9999px;
+//  & + label {
+//    display: inline-block;
+//    vertical-align: top;
+//    padding: 0 0 0 30px;
+//    position: relative;
+//    cursor: pointer;
+//    font-size: 15px;
+//    line-height: 24px;
+//    width: auto !important;
+//    &:before, &:after {
+//      position: absolute;
+//      content: '';
+//    }
+//  }
+//  &:not(:checked) + label {
+//    &:before {
+//    }
+//  }
+//  &:checked + label {
+//    &:after {
+//      opacity: 1;
+//    }
+//  }
+//  &:disabled:checked + label {
+//    &:before {
+//    }
+//  }
+//  &:disabled:not(:checked) + label {
+//    &:before {
+//    }
+//  }
+//}
+
+// Radio
+//----------------------------------------------------//
+//input[type="radio"] {
+//  position: absolute;
+//  left: -9999px;
+//  & + label {
+//    display: inline-block;
+//    vertical-align: top;
+//    padding: 0 0 0 30px;
+//    position: relative;
+//    cursor: pointer;
+//    font-size: 15px;
+//    line-height: 24px;
+//    width: auto !important;
+//    &:before, &:after {
+//      position: absolute;
+//      content: '';
+//    }
+//  }
+//  &:not(:checked) + label {
+//    &:before {
+//    }
+//  }
+//  &:checked + label {
+//    &:after {
+//      opacity: 1;
+//    }
+//  }
+//  &:disabled:checked + label {
+//    &:before {
+//    }
+//  }
+//  &:disabled:not(:checked) + label {
+//    &:before {
+//    }
+//  }
+//}
+

@@ -1,0 +1,43 @@
+//----------------------------------------------------//
+// Mixins & Includes                                  //
+//----------------------------------------------------//
+
+// PLACEHOLDER MIXIN
+@mixin placeholderColor($input-text-color) {
+  &::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+  &:-moz-placeholder {
+    color: $input-text-color;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $input-text-color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+  &:focus:-moz-placeholder {
+    color: transparent;
+    opacity: 1;
+  }
+  &:focus::-moz-placeholder {
+    color: transparent;
+    opacity: 1;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+
+
+
+

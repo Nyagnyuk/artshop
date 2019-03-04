@@ -1,0 +1,475 @@
+@import
+'normalize&reset.scss';
+
+//----------------------------------------------------//
+// MAIN 						 				      //
+//----------------------------------------------------//
+body{
+  font-family:  'Roboto Condensed', sans-serif;
+  color: #595959;
+  background-color: #faf9fb;
+}
+.header{
+  background: #e8e6ed;
+  padding: 15px 0 14px;
+}
+.header h1{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  padding: 10px 0 0px 98px;
+  background: url("../img/lock.png")no-repeat left;
+}
+.header h1 span{
+  font-size: 18px;
+  display: block;
+  font-weight: 400;
+  margin-top: -12px;
+}
+/********form**************/
+.content{
+  padding-top: 60px;
+}
+.title{
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34.1px;
+  background-image: linear-gradient(to top, #265176 0%, #1b3e61 100%);
+  padding: 20px 0 17px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.title i{
+  color: #fff;
+}
+.form_body{
+  //padding: 35px 0;
+  padding: 27px 0 39px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+.required{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.1px;
+  display: block;
+  padding-right: 15%;
+}
+.form-control {
+  //width: 94%;
+  border-radius: 2px;
+  border: 1px solid #e8e8e8;
+  background-color: #f2f3f8;
+  min-height: 43px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label{
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 12px;
+}
+.form-group {
+  overflow: hidden;
+}
+.contacts{
+  margin-bottom: 25px;
+}
+.billing{
+  margin-bottom: 30px;
+}
+.billing .form_body{
+  padding: 0 0 57px 0;
+}
+.security_text{
+  border-radius: 4px;
+  border: 1px solid #bbe3b7;
+  background-color: #d9f1d7;
+  border-left: 4px solid #78c479;
+  margin: 30px 0;
+  font-size: 14px;
+  padding: 16px 16px 7px;
+}
+.security_text strong{
+  font-weight: 700;
+}
+.security_title{
+  margin-bottom: 7px;
+}
+.security_title i{
+  margin-right: 3px;
+}
+.security_text p{
+  font-size: 14px;
+  line-height: 18px;
+}
+.form_body img{
+  margin: 0 auto;
+}
+.billing_img{
+  margin-bottom: 17px;
+}
+.form-group-billing label{
+  padding-top: 0;
+  line-height: 21px;
+}
+.bill_bottom_text{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  padding-left: 0;
+}
+.percent{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 7px;
+}
+.question{
+  font-weight: 400;
+}
+.form_top{
+  margin-top: 3px;
+}
+
+.comfirm{
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+.subscriber{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.price{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.price strong{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+}
+.subscriber strong{
+  font-weight: 700;
+}
+.order_button{
+  border-radius: 2px;
+  background-image: linear-gradient(to top, #ff4e00 0%, #fa7440 100%);
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 13px 10px;
+}
+.order_button i{
+  margin-right: 3px;
+}
+.order .form_body{
+  padding-bottom: 58px;
+}
+.bill_top{
+  margin-top: 6px;
+}
+.footer{
+  padding: 35px;
+}
+.copy{
+  color: #595959;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.what_get{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 54px;
+  span{
+    font-size: 20px;
+    display: block;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  ul{
+    margin-top: 26px;
+    li{
+      span{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      margin-bottom: 10px;
+      .what_get_icon{
+        width: 58px;
+        height: 58px;
+        background-image: linear-gradient(to top, #ff4e00 0%, #fa7440 100%);
+        border-radius: 50%;
+        color: #fff;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 24px;
+        i{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          font-size: 26px;
+        }
+      }
+      span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.th_days{
+  .days_bg{
+    position: relative;
+    margin-top: 43px;
+    hr{
+      background-color: #8a8a8a;
+      height: 2px;
+    }
+    .days_circle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 52px;
+      height: 52px;
+      border: 2px solid #8a8a8a;
+      background-color: #faf9fb;
+      border-radius: 50%;
+      top: -21px;
+      img{
+        margin: 0 auto;
+        margin-top: 9px;
+      }
+      .img_quotes{
+        margin-top: 15px;
+      }
+    }
+
+  }
+
+  .guarantee_th{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    .guar_text{
+      width: 50%;
+      text-align: center;
+      .thirty{
+        display: block;
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 106px;
+      }
+      span{
+        font-size: 52px;
+        font-weight: 400;
+      }
+    }
+    .guarantee_img{
+      width: 50%;
+    }
+  }
+  h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 23px;
+    strong{
+      font-weight: 700;
+    }
+  }
+  .th_days_sign{
+    text-align: center;
+    margin-top: 30px;
+    .th_days_photo{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .th_days_pos{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      span{
+        display: block;
+      }
+      strong{
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+.members{
+  h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 18px;
+    margin-top: 43px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 11px;
+  }
+  .members_block{
+    margin-top: 32px;
+    .members_bottom{
+      margin-bottom: 39px;
+    }
+    div{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      span{
+        display: block;
+      }
+      strong{
+        font-weight: 700;
+      }
+    }
+  }
+}
+.member_img{
+  width: 80px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+}
+.members_text{
+  width: calc(100% - 100px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 992px){
+  .what_get {
+    margin-top: 44px;
+  }
+  .what_get ul li .what_get_icon {
+    margin-right: 13px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .header{
+    padding: 10px 0 6px;
+  }
+  .header h1{
+    font-size: 18px;
+    background: url("../img/lock_sm_bg.png")no-repeat left;
+    line-height: 20px;
+    padding-left: 67px;
+  }
+  .header h1 span{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+  .content {
+    padding-top: 34px;
+  }
+  .title{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 18px;
+    padding: 12px 0 12px;
+  }
+  .form_body {
+    padding: 8px 0 26px;
+  }
+  label{
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .security_text{
+    margin: 10px 0 21px;
+    padding: 16px 14px 3px;
+  }
+  .billing_img {
+    margin-bottom: 18px;
+  }
+  .data_bottom{
+    margin-bottom: 20px;
+  }
+  .subscriber{
+    margin-bottom: 15px;
+  }
+  .price strong{
+    font-size: 36px;
+  }
+  .form-group {
+    margin-bottom: 13px;
+  }
+  .billing .form_body {
+    padding: 7px 0 11px 0;
+  }
+
+  .form_top {
+    margin-top: 23px;
+  }
+  .form_top > div{
+    margin-bottom: 13px;
+  }
+  .order .form_body {
+    padding-bottom: 20px;
+  }
+  .what_get {
+    margin-top: 44px;
+  }
+  .what_get ul li .what_get_icon {
+    margin-right: 13px;
+  }
+  .what_get h2{
+    font-size: 28px;
+  }
+  .th_days .guarantee_th .guar_text .thirty {
+    font-size: 86px;
+    line-height: 72px;
+  }
+  .th_days .guarantee_th .guar_text span {
+    font-size: 38px;
+  }
+  .wrapper_quar{
+    width: 110px;
+    margin: 0 auto;
+  }
+  .th_days h2{
+    font-size: 28px;
+  }
+  .th_days .th_days_sign .th_days_photo{
+    width: 176px;
+  }
+  .members h2{
+    font-size: 23px;
+    text-align: center;
+  }
+}
