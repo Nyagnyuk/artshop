@@ -25,8 +25,8 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
-    max-height: 50px;
-    min-height: 50px;
+    max-height: 65px;
+    min-height: 65px;
     overflow: hidden;
     text-align: center;
     margin-bottom: 20px;
@@ -122,6 +122,31 @@
       }
     }
   }
+  &-select{
+    display: inline-block;
+  }
+  &-col{
+    display: none;
+  }
+}
+
+#item-select-sort{
+  background-position: right 7px center;
+  background-repeat: no-repeat;
+  background-image: url('../img/select-down-small.png');
+  background-size: 7px 4px;
+  background-color: #fff;
+  border: 1px solid rgba(49, 49, 49, 0.23);
+  font-size: 12px;
+  line-height: 12px;
+  padding: 4px 7px;
+  width: 111px;
+  height: 24px;
+  border-radius: 0;
+  &:focus {
+    background-image: url('../img/select-down-small.png');
+    box-shadow: none;
+  }
 }
 
 .item-cart-link:not([href]):not([tabindex]){
@@ -155,4 +180,96 @@
 .slick-dots li button:before{
   content: '';
 }
-/**********************************************/
+/**************box-item box-item-list******************/
+
+.box-item.box-item-list{
+  .item{
+    margin-bottom: 5px;
+  }
+  .item-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px 10px 10px;
+  }
+ .item-title{
+   display: inline-block;
+   font-size: 12px;
+   line-height: 14px;
+   width: 300px;
+   text-align: left;
+   min-height: auto;
+   max-height: auto;
+   margin-bottom: 0;
+ }
+  .item-img{
+    display: none;
+  }
+  .item-brand{
+    display: none;
+  }
+  .item-units{
+    display: none;
+  }
+  .item-attr{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .item-modelart{
+    display: none;
+  }
+  .item-options{
+    display: none;
+  }
+  .item-buy{
+    align-items: center;
+  }
+  .form-group{
+    margin-bottom: 0;
+  }
+  .item-price{
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #fff;
+    width: auto;
+    margin-right: 15px;
+  }
+  .item-cart{
+    width: 132px;
+  }
+  .item-col{
+    display: inline-block;
+  }
+}
+#input-col{
+  border: 1px solid rgba(49, 49, 49, 0.18);
+  background-color: #ffffff;
+  width: 65px;
+  color: #4d080f;
+  font-family: $mainFont;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 0;
+  padding: 4px;
+  margin-right: 10px;
+}
+/*****************box-item  box-item-grid ****************/
+
+.box-item.box-item-grid{
+  .item-wrapper{
+    padding: 0;
+  }
+  .item-title{
+    margin: 15px 15px 0 15px;
+  }
+  .item-img{
+    margin: 15px 15px 30px 15px;
+  }
+  .item-attr{
+    margin: 15px ;
+  }
+  .item-options{
+    margin: 15px;
+  }
+}
