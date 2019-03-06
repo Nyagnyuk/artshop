@@ -8741,6 +8741,52 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
         top: -1px;
         color: #ffffff; }
 
+.scrap-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px; }
+
+.scrap-img {
+  width: 20%;
+  display: inline-block;
+  margin-right: 27px; }
+
+.scrap-text {
+  width: 75%;
+  display: inline-block;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400; }
+
+.about {
+  font-family: "Open Sans", sans-serif; }
+  .about-text {
+    color: #454545;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px; }
+  .about-img {
+    margin-bottom: 30px; }
+  .about-surname {
+    color: #190002;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .about-position {
+    color: #5d5d5d;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px; }
+  .about-row > div {
+    margin-bottom: 20px; }
+
 .box {
   padding-bottom: 30px; }
   .box-header {
