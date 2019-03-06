@@ -85,12 +85,9 @@ $(document).ready(function () {
 
     // Product Grid
     $('#grid-view').click(function() {
-
-        console.log(1);
         $('.box-list.row > .box-item-list').attr('class', 'box-item col-md-4 box-item-grid');
         $('#list-view').removeClass('active');
         $('#grid-view').addClass('active');
-
     });
 
 });

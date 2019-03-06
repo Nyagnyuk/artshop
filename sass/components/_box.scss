@@ -196,11 +196,14 @@
    display: inline-block;
    font-size: 12px;
    line-height: 14px;
-   width: 300px;
+   width: 200px;
    text-align: left;
    min-height: auto;
    max-height: auto;
    margin-bottom: 0;
+   @include media-breakpoint-up(xl) {
+     width: 300px;
+   }
  }
   .item-img{
     display: none;

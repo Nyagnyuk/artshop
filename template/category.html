@@ -3,18 +3,18 @@
   <div class="container">
     <div class="row row-bg">
       <div class="col-lg-3">
-        @@include('template/blocks/aside.html')
+        @@include('template/blocks/filter.html')
       </div>
       <div class="col-lg-9">
         <div class="row">
           @@include('template/blocks/breadcrumb.html')
         </div>
 
-      <div class="row">
-        <div class="col">
-        <div class="gallery-header">Галерея работ художникАльбомы и т.п.</div>
+        <div class="row">
+          <div class="col">
+            <div class="gallery-header">Галерея работ художникАльбомы и т.п.</div>
+          </div>
         </div>
-      </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group input-group-select">
@@ -34,8 +34,12 @@
           </div>
           <div class="col-md-6">
             <div class="btn-group btn-group-sm">
-              <button type="button" id="grid-view" class="btn btn-default active" data-toggle="tooltip" title="" data-original-title="Сетка"><span class="icon-grid"></span>Список без картинки</button>
-              <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="" data-original-title="Список"><span class="icon-list"></span>Список с картинкой</button>
+              <button type="button" id="grid-view" class="btn btn-default active" data-toggle="tooltip" title=""
+                      data-original-title="Сетка"><span class="icon-grid"></span>Список без картинки
+              </button>
+              <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title=""
+                      data-original-title="Список"><span class="icon-list"></span>Список с картинкой
+              </button>
             </div>
           </div>
         </div>
@@ -43,52 +47,12 @@
         <section class="box">
           <div class="box-list row">
             <div class="box-item  box-item-grid col-md-4">
-            <!--<div class="box-item col-md-12 box-item-list">-->
-                <div class="item">
-                  <div class="item-wrapper">
-                    <div class="item-title">Н-р перфорированных картонных заготовок "Мини-альбом" 1мм 6л.металл.кольца КВАДРАТЫ С ОКОШКОМ ПОД ФОТО  </div>
-                    <div class="item-img">
-                      <a href="product.html" class="item-link">
-                        <img src="img/pic_3.png" alt="product" class="img-fluid">
-                      </a>
-                      <div class="item-label"><img src="img/icon_1.png" class="img-fluid"></div>
-                    </div>
-                    <div class="item-attr">
-                      <div class="item-model"><span class="item-modelart">Артикул:</span> <span class="item-modelvalue">ПР-PTS-15</span></div>
-                      <div class="item-brand">Изготовитель: <span>«Пентел», Япония</span></div>
-                      <div class="item-units">Единицы: <span> набор</span></div>
-                    </div>
-                    <div class="item-options">
-                      <div class="item-select">
-                        <select id="item-select-sort" class="form-control">
-                          <option value="" selected="selected">Синий</option>
-                          <option value="">Красный</option>
-                        </select>
-                      </div>
-                      <div class="item-status-1"><i class="fa fa-check-square-o" aria-hidden="true"></i> В наличии</div>
-                    </div>
-
-                    <div class="item-buy">
-                      <div class="item-price">77,50 грн</div>
-                      <div class="item-col">
-                        <div class="form-group input-group-select">
-                          <input type="text" class="form-control" placeholder="1" id="input-col">
-                          <label class="input-group-addon" for="input-col">шт</label>
-                        </div>
-                      </div>
-                      <div class="item-cart">
-                        <a title="Купить"  class="item-cart-link" href="#">Купить</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            <div class="box-item  box-item-grid col-md-4">
               <!--<div class="box-item col-md-12 box-item-list">-->
               <div class="item">
                 <div class="item-wrapper">
-                  <div class="item-title">Н-р перфорированных картонных заготовок </div>
+                  <div class="item-title">Н-р перфорированных картонных заготовок "Мини-альбом" 1мм 6л.металл.кольца
+                    КВАДРАТЫ С ОКОШКОМ ПОД ФОТО
+                  </div>
                   <div class="item-img">
                     <a href="product.html" class="item-link">
                       <img src="img/pic_3.png" alt="product" class="img-fluid">
@@ -96,7 +60,8 @@
                     <div class="item-label"><img src="img/icon_1.png" class="img-fluid"></div>
                   </div>
                   <div class="item-attr">
-                    <div class="item-model"><span class="item-modelart">Артикул:</span> <span class="item-modelvalue">ПР-PTS-15</span></div>
+                    <div class="item-model"><span class="item-modelart">Артикул:</span> <span class="item-modelvalue">ПР-PTS-15</span>
+                    </div>
                     <div class="item-brand">Изготовитель: <span>«Пентел», Япония</span></div>
                     <div class="item-units">Единицы: <span> набор</span></div>
                   </div>
@@ -119,7 +84,50 @@
                       </div>
                     </div>
                     <div class="item-cart">
-                      <a title="Купить"  class="item-cart-link" href="#">Купить</a>
+                      <a title="Купить" class="item-cart-link" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-item  box-item-grid col-md-4">
+              <!--<div class="box-item col-md-12 box-item-list">-->
+              <div class="item">
+                <div class="item-wrapper">
+                  <div class="item-title">Н-р перфорированных картонных заготовок</div>
+                  <div class="item-img">
+                    <a href="product.html" class="item-link">
+                      <img src="img/pic_3.png" alt="product" class="img-fluid">
+                    </a>
+                    <div class="item-label"><img src="img/icon_1.png" class="img-fluid"></div>
+                  </div>
+                  <div class="item-attr">
+                    <div class="item-model"><span class="item-modelart">Артикул:</span> <span class="item-modelvalue">ПР-PTS-15</span>
+                    </div>
+                    <div class="item-brand">Изготовитель: <span>«Пентел», Япония</span></div>
+                    <div class="item-units">Единицы: <span> набор</span></div>
+                  </div>
+                  <div class="item-options">
+                    <div class="item-select">
+                      <select id="item-select-sort" class="form-control">
+                        <option value="" selected="selected">Синий</option>
+                        <option value="">Красный</option>
+                      </select>
+                    </div>
+                    <div class="item-status-1"><i class="fa fa-check-square-o" aria-hidden="true"></i> В наличии</div>
+                  </div>
+
+                  <div class="item-buy">
+                    <div class="item-price">77,50 грн</div>
+                    <div class="item-col">
+                      <div class="form-group input-group-select">
+                        <input type="text" class="form-control" placeholder="1" id="input-col">
+                        <label class="input-group-addon" for="input-col">шт</label>
+                      </div>
+                    </div>
+                    <div class="item-cart">
+                      <a title="Купить" class="item-cart-link" href="#">Купить</a>
                     </div>
                   </div>
                 </div>
@@ -129,9 +137,22 @@
 
           </div>
         </section>
+
+      <div class="row">
+        <div class="col">
+          <ul class="pagination">
+            <li class="pagination-next"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="pagination-last"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
+  </div>
 </main>
 @@include('template/layout/footer.html')

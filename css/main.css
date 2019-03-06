@@ -7771,6 +7771,94 @@ ul {
   .aside .navbar-expand-lg .navbar_wrap {
     display: none; } }
 
+/*****************category-list-filter***********/
+.category-filter {
+  padding: 27px 15px;
+  overflow: hidden; }
+  .category-filter .category-item {
+    border-bottom: none;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px; }
+    .category-filter .category-item:before {
+      content: url("../img/liststyle.svg");
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 4px; }
+    .category-filter .category-item-last {
+      border-bottom: 1px solid #84151f;
+      padding-bottom: 25px;
+      position: relative; }
+      .category-filter .category-item-last:after {
+        content: '';
+        left: -50px;
+        width: 300px;
+        height: 1px;
+        background-color: #84151f;
+        bottom: -1px;
+        position: absolute; }
+  .category-filter .category-item-check {
+    padding-left: 0; }
+    .category-filter .category-item-check:before {
+      display: none; }
+    .category-filter .category-item-check .box-filter > li > span {
+      color: #313131;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600; }
+
+/**********************style_chekbox***********************************/
+ul.box-filter li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0; }
+
+.box-filter li {
+  position: relative; }
+
+ul.box-filter li label {
+  color: #313131;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  padding: 1px 0 0 20px;
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  -ms-transition: .4s ease-in-out; }
+
+ul.box-filter input[type="checkbox"]:not(checked) + label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 7px;
+  width: 11px;
+  height: 12px;
+  border: 1px solid rgba(49, 49, 49, 0.16);
+  border-radius: 3px;
+  background-image: linear-gradient(-193deg, #f6f7fb 0%, #eff5fd 1%, #fbfcff 100%); }
+
+ul.box-filter li input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: url("../img/ic_done.png");
+  display: block;
+  left: 2px;
+  top: 0;
+  width: 9px;
+  height: 7px; }
+
+.button-reset {
+  color: #09a6f8;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: underline; }
+
 /********************aside block***************/
 .aside-sale {
   display: none; }
@@ -8609,6 +8697,50 @@ ul {
 #list-view.active .icon-list {
   background: url("../img/list_active.png") no-repeat; }
 
+/*****************pagination**********************/
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .pagination li {
+    margin-right: 14px;
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
+    .pagination li:last-of-type {
+      margin-right: 0; }
+    .pagination li a {
+      color: #b5b5b5; }
+      .pagination li a:hover {
+        color: #84151f; }
+    .pagination li.active a {
+      color: #84151f; }
+    .pagination li.active span {
+      color: #84151f; }
+  .pagination-next, .pagination-last {
+    border-radius: 3px;
+    background-color: #84151f;
+    text-align: center; }
+    .pagination-next a, .pagination-last a {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff; }
+      .pagination-next a i, .pagination-last a i {
+        font-size: 15px;
+        position: relative;
+        top: -1px;
+        color: #ffffff; }
+
 .box {
   padding-bottom: 30px; }
   .box-header {
@@ -8786,11 +8918,14 @@ ul {
   display: inline-block;
   font-size: 12px;
   line-height: 14px;
-  width: 300px;
+  width: 200px;
   text-align: left;
   min-height: auto;
   max-height: auto;
   margin-bottom: 0; }
+  @media (min-width: 1200px) {
+    .box-item.box-item-list .item-title {
+      width: 300px; } }
 
 .box-item.box-item-list .item-img {
   display: none; }
