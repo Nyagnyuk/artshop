@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="MobileOptimized" content="320">
+    <meta name="description" content="">
+    <meta name='copyright' content="">
+    <meta name="og:title" content="">
+    <meta name="og:image" content="">
+    <meta name="og:description" content="">
+    <meta name="og:email" content="">
+    <meta name="og:phone_number" content="+380">
+    <meta name="fb:page_id" content="">
+
+    <title>Лавка художника</title>
+
+    <!--[if IE]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/png" href="img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browserupgrade" style="color: #fff;background: #000;padding: 20px 15px; text-align: center;">You are using an
+    <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
+    experience.</p>
+<![endif]-->
+
+
+<div class="fixcontent">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-wrap">
+            <div class="container">
+                <div class="row header-top align-items-center">
+                    <ul class="header-top-list col d-md-none align-items-end justify-content-end">
+                        <li><a href="#" data-toggle="modal" data-target="#enterModal">Вход</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#checkinModal">Регистрация</a></li>
+                    </ul>
+                    <div class="col-lg-3 col-md-2">
+                        <a href="index.html" class="header-logo">
+                            <img src="img/logo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6">
+                        <div class="header-phone"><span class="d-none d-md-inline-block">Киев, ТЦ «Олимпийский»:</span> <a href="tel:+380445932605">(044) 593 26 05</a></div>
+                        <div id="search">
+                            <div class="button-search"></div>
+                            <input type="text" name="search" placeholder="Поиск" value="" style="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 d-none d-md-flex">
+                        <div class="header-opt"><strong>Оптовые продажи:</strong><br>
+                            <a href="tel:+380503480138"><i class="fa fa-phone" aria-hidden="true"></i> (050) 348-01-38</a><br>
+                            <a href="malto:shop@paint.dn.ua"><i class="fa fa-envelope" aria-hidden="true"></i> shop@paint.dn.ua</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 d-none d-lg-flex">
+                        <div class="header-social">
+                            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><br>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <ul class="header-top-list d-none d-md-flex">
+                            <li><a href="#" data-toggle="modal" data-target="#enterModal" id="111">Вход</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#checkinModal">Регистрация</a></li>
+                        </ul>
+
+                        <div id="cart">
+                            <a id="cart-link">
+                                <div class="h4-style">Корзина:</div>
+                                <div id="cart-total">
+                                    <span class="cart-total-items">Товаров:</span>
+                                    <span class="cart-total-count">1000</span><br>
+                                    <span class="cart-total-total">10000 руб.</span>
+                                </div>
+                            </a>
+                            <!--<div class="content">-->
+                                <!--<div class="empty">В корзине пусто!</div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-bg-top">
+                <div class="col">
+                    <nav class="navbar navbar-expand-md navbar-menu">
+                        <div class="navbar_wrap">
+                            <button class="navbar-toggler d-flex navbar-btn" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                                <span class="navbar-text d-lg-none">Меню</span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarmain">
+
+                            <ul class="header-list navbar-nav mr-auto">
+                                <li class="header-item">
+                                    <a href="index.html"  class="header-link">Главная</a>
+                                </li>
+                                <li class="header-item">
+                                    <a href="catalog.html"  class="header-link">Каталог</a>
+                                </li>
+                                <li class="header-item">
+                                    <a href="about.html"  class="header-link">О нас</a>
+                                </li>
+                                <li class="header-item">
+                                    <a href="delivery.html"  class="header-link">Доставка</a>
+                                </li>
+                                <li class="header-item">
+                                    <a href="gallery.html"  class="header-link">Галерея</a>
+                                </li>
+                                <li class="header-item">
+                                    <a href="articles.html"  class="header-link">Статьи</a>
+                                </li>
+                                <li class="header-item">
+                                    <a href="contacts.html"  class="header-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header><!-- HEADER [END] -->
+
+<main class="content">
+    <div class="container">
+        <div class="row row-bg">
+            <div class="col-lg-3">
+                <div class="aside">
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="navbar_wrap">
+      <button class="navbar-toggler d-flex navbar-btn" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        <span class="navbar-text d-lg-none">Категории</span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="category-list navbar-nav mr-auto flex-column">
+        <li class="category-item">
+          <a href="#"  class="category-link">Декоратиные материалы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Scrapbooking <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Аэрография <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item">
+          <a href="#"  class="category-link">Декоратиные материалы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Scrapbooking <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Аэрография <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item">
+          <a href="#"  class="category-link">Декоратиные материалы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Scrapbooking <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Аэрография <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item">
+          <a href="#"  class="category-link">Декоратиные материалы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Scrapbooking <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-item"><a href="#" class="category-link">Аэрография <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="nav category-list-down flex-column">
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">альбомы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">братсы</a>
+            </li>
+            <li class="category-item-down">
+              <a href="#" class="category-link-down">бумага</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <aside class="aside-sale">
+    <div class="aside-wrapper">
+      <div class="aside-data">*до 29 ноября</div>
+      <div class="aside-disc"><strong>-25</strong><sup>%</sup></div>
+      <div class="aside-title">на краски для ткани
+        <span>Javanna Textil</span>
+      </div>
+      <a href="#" class="aside-sale-link">подробнее</a>
+    </div>
+    <div class="aside-see"><a href="#">смотреть все акции</a></div>
+  </aside>
+  <aside class="aside-crimea">
+    Сайт для Крыма<br>
+    <a href="mailto:hobby-paint.ru">hobby-paint.ru</a>
+  </aside>
+  <aside class="aside-brands">
+    <ul>
+      <li><a href="#"><img src="img/logo_1.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_2.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_3.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_4.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_5.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_6.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_7.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_8.png" alt="logo" class="img-fluid"></a></li>
+      <li><a href="#"><img src="img/logo_9.png" alt="logo" class="img-fluid"></a></li>
+    </ul>
+  </aside>
+
+</div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+  <li class="breadcrumb-item"><a href="#">Галерея</a></li>
+  <li class="breadcrumb-item active">Декор кожи</li>
+</ol>
+                </div>
+                <section class="gallery">
+                    <div class="gallery-header">Краски для аэрографии</div>
+                    <div class="gallery-author">Автор <span class="gallery-author-name">Токарев Игорь</span></div>
+                    <p class="mar-bot">Бывают разные типы красок, которыми можно рисовать аэрографом.  Они делятся по их предназначению (универсальные, по металлу, пластику, по стеклу, ткани и т.п.). практически все ищут сразу готовую краску для аэрографии(акриловая краска специально разработанная для аэрографии либо авто эмали), в замен им есть альтернативные варианты, которые подходят для нанесения через аэрограф.</p>
+                    <p><strong>Акрил</strong> универсален, подходит для разных областей применения.
+                        Главное достоинство акриловых красок - короткое время высыхания, акриловая краска сохнет буквально на глазах и готова к обработке сразу же после высыхания. Другим их достоинством (и немалым) является отсутствие запаха при работе. Краски прекрасно распыляются (но это дело практики). Большим достоинством красок нового поколения является очень дешёвый и доступный растворитель – вода.</p>
+                    <div class="gallery-desc">Преимущества водорастворимых акриловых красок:</div>
+                    <ul>
+                        <li>не нужны специальные растворители;</li>
+                        <li>отсутствует неприятный запах, не ядовиты и гипоаллергенны (то есть не вызывают аллергических реакций);</li>
+                        <li>в отличие от других водорастворимых красок, акрил быстро сохнет и после высыхания не пачкается;</li>
+                        <li>легко смываются с рук;</li>
+                        <li>широкий выбор непрозрачных кроющих красок (можно, например, писать белым по черному без образования «грязи»);</li>
+                    </ul>
+                    <div class="gallery-desc">Чем разбавлять акрил?</div>
+                    <p>Как правило, они на водной основе, если густые, то растворяются водой, либо раствором- дистиллированная вода + водка в пропорции 1/1Поверьте- это важное условие краска должна быть консистенцией как молоко.
+                        Для получения более прозрачных цветов нужно добавлять больше разбавителя, до той консистенции которая необходима!</p>
+                </section>
+                <section class="aerog">
+                    <div class="aerog-title">Акрил MAIMERI Policolor, maimeri acrilico, idea decor</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_1.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Policolor - краска итальянской фирмы маймери, краска очень густая, пригодна для аэрографии, при хорошем ее разбавлении, выпускается в широкой цветовой палитре.  Светостойкость указана на банке звёздочками. Неприятная особенность-нередко забивает сопло, не рекомендую при диаметре сопла меньше чем 0.3 мм. В целом наиболее подходят для аэрографии и по качеству и по цене</p>
+                            <p>Обычно используют краску этого производителя для настенной росписи, и живописи maimeri acrilico, idea decor-не такие покрывные </p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Профессиональная краска Rubens"Premia" (Рубенс Премия)</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_2.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Цвета очень насыщенные и яркие.</p>
+                            <p>Краски из натуральных пигментов, водорастворимые, обладают прекрасной адгезией (сцепляемостью) к любой поверхности, в том числе к пластикам, которые тяжело красить(капрон, полиэстер),любым металлам, стенам,, холсту, стеклу, окрашенным любой краской поверхностям, дереву, тканям и т.д.Ложатся очень равномерно, обладают насыщенным цветом, который не блекнет после высыхания. Распыл равномерный,"сопли" на конце игры не собираются при правильном их разбавлении,"плевков" нет.</p>
+                            <p>Нужно внимательно смотреть маркировку-часть красок корпусные, часть полупрозрачные и прозрачные  лесировочные.</p>
+                            <p>Корпусные (маркировка чёрный квадратик) - действительно очень корпусные краски, поэтому нужно быть аккуратнее. Полупрозрачные (маркировка наполовину закрашенный квадратик). Лесировочные (маркировка белый квадрат) - для особо тонких лесировок, краска мелкодисперсная работает с очень мелкими соплышками до 0.15мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Краска Rubens"Atelier" (Рубенс Ателье)</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_3.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>- уступает Премии, крупнее пигмент. не натуральный, более жидкая, отлично подходит для аэрографии. Работает с соплами от 0.2мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Rubens"Deko" (Рубенс Декоракрил)</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_4.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>самая жидкая краска из рубенсовой линейки, это лессировочные краски работают с соплом от 0.3мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Лаки</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_5.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Водорастворимые лаки при небольшом их разбавлении отлично распыляются аэрографом. Для качественного закрепления необходимо наложение нескольких слоев лака.</p>
+                            <p>Лаки  на синтетических смолах чуть труднее в распылении, их труднее разбавлять до жидкого состояния, без потери свойств лака.</p>
+                            <p>Покрывные лаки для заключительных работ, даммарные, фиксативы, тоже отлично распыляются. Работают с соплом от 0.3 мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Пигменты</div>
+                    <div class="row aerog-row">
+                        <div class="col">
+                            <p>Для них нужны связующие, если их нет, возможно использовать лаки как основу.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title"> Жидкий металл</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_6.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>- краски из металлических пигментов, обладают прекрасной адгезией (сцепляемостью) к любой поверхности, пластикам, любым металлам, холсту, стеклу, окрашенным любой краской поверхностям, дереву, гипсу, керамике, стеклу. Закрепляются лаками на водной основе для золочения. Ложатся очень равномерно, обладают насыщенным цветом, который не блекнет после высыхания. Распыл равномерный,"плевков" нет. Работают с соплом от 0.2 мм.</p>
+                            <p>Жидкая поталь фирмы Kreul (Кройль) не требует разбавления, отлично подходит для аэрографии.</p>
+                            <p>Жидкий металл Maimeri (Маймери) разбавляется спиртом.</p>
+                            <p>Жидкий металл Viva ( Вива) разбавляется водой,</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Тушь ROTRING</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_7.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>можно использовать как краску для аэрографии, особенно для тренировки и для работы по бумаге и картону, очень качественна и насыщена, смешивается с акриловой краской. Недостаток -небольшая цветовая палитра. работает с соплом от 0.2мм.</p>
+                            <p>Аэрограф промывать средством для мытья стекол.</p>
+                            <p>Гуашь - плохо подходит для аэрографии, мгновенно забивает аэрограф, больше придётся чистить аэрограф, чем рисовать, поэтому лучше не пробовать. работает с соплом от 0.5мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Акварель</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_8.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>-работать приятно, но на солнышке быстро выгорает. Эта краска подходит только для создания иллюстраций в полиграфии, и для акварельной живописи.</p>
+                            <p>Работает с соплом от 0.2мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Масляная краска </div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_9.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>фирмы <strong>Nerchau (Нерхау)</strong> Германия, <strong>Classico Maimeri (Маймери)</strong> Италия, <strong>Мастер класс</strong> Санкт-петербург.</p>
+                            <p>-чудесная вещь, разводить скипидаром или уайт-спиритом. закрепить  даммарным лаком. В использовании похожа на автомобильную краску, но цвета получаются намного приятнее и живее, без эффекта иллюстративности. Чтобы нормально работать маслом, разводить краску лучше разбавителем без запаха, однако тогда работать нужно в очень хорошо проветриваемом помещении, поскольку концентрация паров растворителя становится малозаметной и можно серьёзно повредить здоровье. работает с соплом 0.3 и мелкодисперсная от 0.2 мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Витражные краски  “идея ветро” Maimeri (Маймери), “хобби лайн” фирмы C.Kreul (Кройль)</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_10.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Краска лаковая прозр. по стеклу и металлу <strong>Vitrail Pebeo</strong> (Пебео).</p>
+                            <p>Необходимо тщательно обезжиривать поверхность перед работой и оберегать её от пыли, поскольку краска по стеклу прозрачна и любая пылинка проявит себя в виде тёмного пятна,а особенно это видно при работе аэрографом. Поэтому при обработке перед покраской не следует применять ворсистых тряпок, салфеток и т.п.</p>
+                            <p>Витражные краски приятные в работе, но только при разбавлении "родным" синтетическим разбавителем, можно также расписывать некоторые виды прозрачных пластиков. Интересно,что добавляя витражную краску в лак на основе синтетических смол фирмы <strong>C.Kreul</strong> (Кройль) можно получить эффект кенди-красок (прозрачное наслоение краски отличается от лессировки глубиной цвета)</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Текстильные краски фирмы C.Kreul (Кройль)</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_11.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Краски по шелку отлично распыляются и не требуют разбавления.</p>
+                            <p>Краски по светлым тканям “Сани” нужно доводить до необходимой  консистенции разбавляя водой, но не больше 20 процентов, т.к.они могут потерять закрепительные свойства. Этими красками можно работать как по светлым так и по темным тканям (по темным нужна белая подложка) закрепляются утюгом. Работают с соплом от 0.3 мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title">Эмаль Rainbow</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_12.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>-качественные краски , разбавляемые органическим растворителем , применяются в моделизме.</p>
+                            <p>Работают с соплом от 0.2 мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title"> Акриловая краска для аэрографии</div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_13.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p><strong>SP-NAIL COLOR.</strong> Универсальная акриловая краска  для аэрографии, нетоксичная, объем 30мл, готовая к нанесению при помощи аэрографа, так же может наноситься и кистью. Она прекрасно подойдет для нейл арта, образуя прочное покрытие. Краска водорастворима, цвета прекрасно смешиваются между собой. Емкость оснащена удобным носиком-дозатором, что позволяет добавлять краску в емкость аэрографа покапельно.</p>
+                            <p><strong>SP-TATTOO COLOR.</strong> Универсальная акриловая краска, нетоксичная для аэрографии, объем 30мл, (в ассортименте) уже готовая к нанесению при помощи аэрографа, так же может наноситься и кистью. Она прекрасно подойдет для бодиарта и нейл арта, образуя эластичное и в тоже время прочное покрытие.</p>
+                            <p>Краска может находиться на тело, держится  до 3 дней,  водорастворима. Все цвета в палитре прекрасно смешиваются между собой. Емкость оснащена удобным носиком-дозатором, что позволяет добавлять краску в емкость аэрографа покапельно. Работают с соплом от 0.2 мм.</p>
+                        </div>
+                    </div>
+                    <div class="aerog-title"> Краска для аэрографии на водной основе "Colorex" 45мл. </div>
+                    <div class="row aerog-row">
+                        <div class="col-md-3 text-center">
+                            <a href="#"><img src="img/a_13.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Водорастворимые краски для аэрографии  <strong>"Colorex"</strong> представляют собой жидкие акриловые краски на спиртовой основе. Могут смешиваться между собой в любых соотношениях. Готовы к применению, при необходимости регулирования интенсивность цвета либо для распыления через аэрограф необходимо разбавление водой(сопло 0.3 разбавление 1краска/1вода). После высыхания образуют прочную нестираемую и несмываемую пленку, отличие от акрила на водной основе "Colorex" более стойкий к механическим повреждениям.  Можно достичь интересных эффектов, используя наложение цветов. Изготовлены на основе акриловой дисперсии. Краски светостойкие и имеют высокую степень перетира и пигментную концентрацию. Обладают высокой адгезией ко многим поверхностям и низкой вязкостью. В равной степени подходят для работы аэрографом, кистью, пером, рапидографом. Хранить в недоступном для детей месте.</p>
+                        </div>
+                    </div>
+                    <p>Для разбавления акриловых красок можно использовать специальный разжижитель <strong>SP-THINNER</strong> для акриловых и латексных красок для аэрографа 120мл. Спиртовой разбавитель, в чистом виде разбавляет только латексные краски для аэрографии Sparmax (спармакс). обычный акрил нужно  разбавлять вода + разжижитель 1/1. в чистом виде он сворачивает акриловую краску. Если разбавлять вода+разжижитель+акрил, краски дольше хранятся, разбавляются и высыхают быстрее. Можно также использовать для промывки аэрографа.</p>
+                    <ul class="product-list text-left">
+                        <li class="product-item"><a href="#"><img src="img/fas_g.svg" alt="fac" class="img-fluid"></a></li>
+                        <li class="product-item"><a href="#"><img src="img/vk_g.svg" alt="vk" class="img-fluid"></a></li>
+                        <li class="product-item"><a href="#"><img src="img/od_g.svg" alt="od" class="img-fluid"></a></li>
+                        <li class="product-item"><a href="#"><img src="img/g_g.svg" alt="g" class="img-fluid"></a></li>
+                    </ul>
+
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+</div><!-- FOOTER FIX [END] -->
+<footer class="footer">
+    <div class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <ul class="down-list">
+                    <li class="down-item"><a href="partners.html" class="down-link">Партнеры</a></li>
+                    <li class="down-item"><a href="about.html" class="down-link">О нас</a></li>
+                    <li class="down-item"><a href="delivery.html" class="down-link">Доставка</a></li>
+                    <li class="down-item"><a href="gallery.html" class="down-link">Галерея</a></li>
+                    <li class="down-item"><a href="articles.html" class="down-link">Статьи</a></li>
+                    <li class="down-item"><a href="contacts.html" class="down-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="footer-title"><i class="fa fa-map-marker" aria-hidden="true"></i> Как нас найти:</div>
+
+        <ul class="footer-list">
+            <li class="footer-item">
+                <address><strong>г. Киев (ЦЕНТР),</strong><br>
+                    ул.Красноармейская, 72а<br>
+                    метро ОЛИМПИЙСКАЯ",<br>
+                    ТЦ "Олимпийский", 3-й этаж;<br>
+                    <a href="tel:+380445932605">(044) 593-26-05</a>
+                </address>
+            </li>
+            <li class="footer-item">
+                <address><strong>г. Киев (левый берег),</strong><br>
+                    ул. Беломорская,1.<br>
+                    ТЦ "Дарынок", метро "ЛЕСНАЯ",<br>
+                    Бутик ПК-15, напротив ФУРШЕТА<br>
+                    <a href="tel:+380958026174">(095) 802-61-74</a>
+                </address>
+            </li>
+            <li class="footer-item">
+                <address><strong>г. Киев (Опт,мелкий опт),</strong><br>
+                    ул. Заболотного, 37<br>
+                    ТЦ "Art Mall", 2-й этаж<br>
+                    <a href="tel:+380503480138">(050) 348-01-38</a>
+
+                </address>
+            </li>
+            <li class="footer-item">
+                <address><strong>Центральный офис</strong><br>
+                    <a href="tel:+380503480138">(050) 348-01-38</a><br>
+                    (работа с оптовыми<br>
+                    покупателями)
+                </address>
+            </li>
+            <li class="footer-item">
+                <address><strong>г. Одесса,</strong><br>
+                    ул. Дерибасовская-33<br>
+                    (ул.Преображенская-34)<br>
+                    <a href="tel:+380487261712">(048) 726-17-12</a>
+                </address>
+            </li>
+        </ul>
+        <ul class="footer-list">
+            <li class="footer-item">Время работы:<br>
+                Пн-Сб: с 9:00 до 18:00,<br>
+                Вс - выходной
+            </li>
+            <li class="footer-item text-center">Присоединяйтесь к нам::<br>
+                <a href="#" class="footer-item-link"><img src="img/logo_vk.png" alt="vk" class="img-fluid"></a>
+                <a href="#" class="footer-item-link"><img src="img/logo_f.png" alt="facebook"></a>
+            </li>
+            <li class="footer-item">
+                &copy;Лавка Художника, 2019 Все права защищены. Использование любых материалов,<br>
+                находящихся на сайте, разрешается при условии размещения гиперссылки.
+            </li>
+        </ul>
+
+    </div>
+
+</footer>
+
+<div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="enterModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="img/close.png" alt="close"></span>
+            </button>
+            <div class="modal-body">
+                <h5 class="modal-title text-center">Авторизация</h5>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="control-label" for="input-email">E-mail</label>
+                        <input type="text" name="email" value="" placeholder="" id="input-email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="input-password">Пароль</label>
+                        <input type="password" name="password" value="" placeholder="" id="input-password"
+                               class="form-control">
+                    </div>
+                    <input type="submit" value="Войти" class="btn_login">
+                    <a href="#" class="btn_checkin" data-toggle="modal" data-target="#checkinModal">Регистрация</a>
+                    <!--<a href="#" class="btn_checkin" >Регистрация</a>-->
+                    <a href="#" class="forgotten_pass">Забыли пароль?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="checkinModal" tabindex="-1" role="dialog" aria-labelledby="checkinModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="img/close.png" alt="close"></span>
+            </button>
+            <div class="modal-body">
+                <h5 class="modal-title text-center">Регистрация</h5>
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="form-group required">
+                        <label class="control-label" for="input-firstname">Ваше имя</label>
+                        <input type="text" name="firstname" value="" id="input-firstname" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <label class="control-label" for="input-email">Ваш E-mail</label>
+                        <input type="email" name="email" value="" id="input-mail" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <label class="control-label" for="input-password">Пароль</label>
+                        <input type="password" name="password" value="" id="input-pass" class="form-control"
+                               aria-autocomplete="list">
+                    </div>
+                    <div class="form-group required">
+                        <label class="control-label" for="input-confirm">Повторить пароль</label>
+                        <input type="password" name="confirm" value="" id="input-confirm" class="form-control">
+                    </div>
+                    <input type="submit" value="Зарегистрироваться" class="">
+                    <a href="#" class="btn_checkin">Авторизация</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script scr="js/jquery.magnific-popup.min.css"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+

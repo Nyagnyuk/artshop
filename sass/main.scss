@@ -220,18 +220,16 @@ ul{
     }
   }
   &-item{
-    background: #a0b900;
     display: inline-block;
     margin-bottom: 1px;
     width: 100%;
     text-align: center;
     position: relative;
     z-index: 1;
-    //transition: padding .2s ease-in-out;
-    //border-bottom: 5px solid transparent;
+    min-height: 56px;
     @include media-breakpoint-up(md) {
       width: 14%;
-      border-radius: 0 0 5px 5px;
+
       margin-right: 1px;
       margin-bottom: 0;
     }
@@ -240,21 +238,23 @@ ul{
     }
     &:last-of-type{
       margin-right: 0;
-      background: $default;
+      a{
+        background: $default;
+      }
     }
-    &:nth-of-type(2){
+    &:nth-of-type(2) a{
       background: #1b9044;
     }
-    &:nth-of-type(3){
+    &:nth-of-type(3) a{
       background: #0f8b79;
     }
-    &:nth-of-type(4){
+    &:nth-of-type(4) a{
       background: #148bad;
     }
-    &:nth-of-type(5){
+    &:nth-of-type(5) a{
       background: #7f519b;
     }
-    &:nth-of-type(6){
+    &:nth-of-type(6) a{
       background: #d00778;
     }
   }
@@ -267,7 +267,10 @@ ul{
     text-transform: uppercase;
     padding: 10px 5px;
     display: inline-block;
-    //transition: padding .2s ease-in-out;
+    width: 100%;
+    background: #a0b900;
+    transition: padding .2s ease-in-out;
+    border-radius: 0 0 5px 5px;
     &:hover{
       color: #fff;
     }
@@ -277,9 +280,12 @@ ul{
     }
   }
 }
-//.header-item:hover {
-//  border-bottom: 5px solid red;
-//}
+.header-item:hover a {
+  padding: 10px 5px 17px;
+}
+.header-item  a.active {
+  padding: 10px 5px 17px;
+}
 .header .navbar-text{
   padding: 0;
 }
@@ -545,6 +551,7 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
 .aside-disc{
   color: #874545;
   font-size: 57px;
+  line-height: 60px;
   font-weight: 400;
   text-transform: uppercase;
   sup{
@@ -961,7 +968,22 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
+    a{
+      color: #190002;
+      font-family: $mainFont;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
   }
+}
+.gallery-top .gallery-title-text{
+  margin-top: 10px;
+}
+.gallery-top .gallery-title-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 //----------------------------------------------------//
 // gallery_item_page				 				      //
@@ -987,7 +1009,94 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
     text-align: center;
     margin-top: 15px;
   }
+  &-img{
+    a{
+      display: inline-block;
+      position: relative;
+      span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: url("../img/cursor_1.svg");
+        width: 91px;
+        height: 91px;
+        display: none;
+      }
+      &:hover span{
+        display: inline-block;
+      }
+    }
+  }
+  &-author{
+    color: #767676;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 34px;
+  }
+  p{
+    color: #010101;
+    font-family: $mainFont;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+  p.mar-bot{
+    margin-bottom: 34px;
+  }
+  &-desc{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  ul{
+    list-style: disc;
+    margin-left: 40px;
+    margin-bottom: 35px;
+  }
+  li{
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
+//----------------------------------------------------//
+// aerog_page				 				      //
+//----------------------------------------------------//
+.aerog{
+  margin-top: 33px;
+  &-title{
+    color: #84151f;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 34px;
+  }
+  p{
+    color: #010101;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  &-row{
+    margin-bottom: 50px;
+  }
+  .product-list{
+    margin: 39px 0 46px;
+  }
+  img{
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+
 
 
 //----------------------------------------------------//
@@ -1508,6 +1617,7 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
 //----------------------------------------------------//
 // about_page					 				      //
 //----------------------------------------------------//
+
 .about{
   font-family: $mainFont;
   &-text{
@@ -1518,7 +1628,19 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
     margin-bottom: 30px;
   }
   &-img{
-    margin-bottom: 30px;
+    width: 140px;
+    height: 139px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto 24px;
+    @include media-breakpoint-up(md) {
+      width: 100px;
+      height: 100px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 140px;
+      height: 139px;
+    }
   }
   &-surname{
     color: #190002;
@@ -1538,7 +1660,20 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
   }
 }
 .about-master{
-  margin: 44px 0;
+  margin: 44px 0 23px;
+  > div{
+    margin: 0 auto 40px;
+    @include media-breakpoint-up(md) {
+      margin: 0 auto;
+    }
+  }
+}
+.shop-map{
+  margin-bottom: 20px;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
 }
 .about-master-wrap{
   padding: 55px 10px 20px;
@@ -1548,7 +1683,7 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
   font-size: 14px;
   line-height: 17px;
   @include media-breakpoint-up(xl) {
-    padding: 55px 25px 20px;
+    padding: 55px 24px 20px;
   }
 }
 .about-master-first{
@@ -1695,10 +1830,19 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
         margin-bottom: 30px;
       }
     }
+    a{
+      color: $default;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: underline;
+      &:hover{
+        color: $default;
+      }
+    }
   }
 }
 .row-text{
-  margin: 30px 0;
+  margin: 12px 0 18px;
   p{
     color: #190002;
     font-size: 14px;
@@ -1707,8 +1851,384 @@ ul.box-filter li input[type="checkbox"]:checked + label::after {
 }
 .row-img{
   margin-top: 13px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  > div{
+    margin-bottom: 30px;
+  }
 }
+
+.about-shop{
+  font-size: 14px;
+  color: #190002;
+  font-family: $mainFont;
+  font-weight: 400;
+  &-red{
+    color: $default;
+  }
+  a{
+    font-size: 14px;
+    color: #190002;
+    font-family: $mainFont;
+    font-weight: 400;
+  }
+  &-dashed{
+    width: 40%;
+    border-bottom: 1px dashed #190002;
+    margin-bottom: 14px;
+    display: inline-flex;
+    position: relative;
+    top: -6px;
+  }
+}
+.about-row-down{
+  margin-top: 30px;
+}
+.about-row{
+  > .col{
+    flex-basis:auto;
+    @include media-breakpoint-up(md) {
+      flex-basis: 0;
+    }
+  }
+}
+.about-list-item{
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    width: 24%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 19%;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 13.7%;
+  }
+}
+.row-logo{
+  margin-top: 48px;
+  margin-bottom: 60px;
+}
+
+
+
+//----------------------------------------------------//
+// modal					 				      //
+//----------------------------------------------------//
+.close{
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  float: none;
+}
+.modal-title{
+  color: #313131;
+  font-family: $mainFont;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
+.modal-content{
+  border-radius: 3px;
+  padding: 25px 34px;
+}
+.modal-body {
+  padding: 0.6rem 1rem;
+}
+.modal-body form{
+  margin-top: 20px;
+}
+.modal-body label{
+  color: #313131;
+  font-family: $mainFont;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin-left: 5px;
+  margin-bottom: 0.1rem;
+}
+.modal-body .form-group {
+  margin-bottom: 1.2rem;
+}
+#checkinModal .modal-body .form-group {
+  margin-bottom: 1rem;
+}
+
+.modal-body input{
+  border: 1px solid rgba(49, 49, 49, 0.2);
+  background-color: #fcfbfb;
+  border-radius: 0;
+  padding: 9px 10px 9px 10px;
+}
+.modal-body input[type="submit"]{
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #84151f;
+  color: #ffffff;
+  font-family: $mainFont;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  margin: 30px auto 21px;
+  padding: 13px 10px 9px;
+  @include media-breakpoint-up(md) {
+    width: 230px;
+  }
+}
+.modal-body .btn_checkin{
+  display: block;
+  color: #0060ca;
+  font-family: $mainFont;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: underline;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 5px;
+}
+.modal-body .forgotten_pass{
+  color: #84151f;
+  font-family: $mainFont;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: underline;
+  letter-spacing: 0.3px;
+  text-align: center;
+  display: block;
+}
+#checkinModal .modal-body input[type="submit"]{
+  margin: 30px auto 13px;
+}
+
+#checkinModal .modal-content {
+  padding: 25px 34px 0;
+}
+  @media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 460px;
+    margin: 1.75rem auto;
+  }
+}
+
+
+
+//----------------------------------------------------//
+// partners_page				 				      //
+//----------------------------------------------------//
+.partners{
+  color: #010101;
+  font-family: $mainFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  &-titles{
+    color: #84151f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+  ol.partners-list {
+    counter-reset: myCounter;
+    list-style: none;
+    padding-left: 0;
+  }
+  ol.partners-list > li::before {
+    content: counter( myCounter ) ') ';
+    counter-increment: myCounter;
+  }
+  li{
+    margin-bottom: 12px;
+  }
+  &-conditions{
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 54px;
+    span{
+      text-transform: lowercase;
+    }
+    a{
+      color: $default;
+      font-family: $mainFont;
+      font-size: 14px;
+      text-decoration: underline;
+      text-transform: lowercase;
+      &:hover{
+        color: $mainFont;
+      }
+    }
+  }
+  .gallery-title-text a{
+    text-decoration: underline;
+  }
+  .gallery-title{
+    margin-bottom: 30px;
+  }
+}
+
+.partners_dnepr{
+  .shop-address p:first-of-type {
+    margin-bottom: 11px;
+  }
+  .shop-address p:nth-of-type(2) {
+    margin-bottom: 11px;
+  }
+  .gallery-title-list{
+    margin-top: 60px;
+  }
+}
+.row-bot{
+  margin-bottom: 30px;
+}
+
+//----------------------------------------------------//
+//contacts					 				      //
+//----------------------------------------------------//
+
+.contacts{
+  &-row{
+    margin-top: 10px;
+  }
+  p{
+    a{
+      color: #000000;
+      font-family: $mainFont;
+      font-size: 14px;
+      font-weight: 400;
+      &:hover{
+        color: #000000;
+      }
+    }
+    .contacts-link{
+      color: $default;
+      &:hover{
+        color: $default;
+      }
+      i{
+        color: #000000;
+      }
+    }
+  }
+  &-list{
+    @include media-breakpoint-up(md) {
+      position: relative;
+      top: -10px;
+      margin-bottom: 128px;
+    }
+    p{
+      margin-bottom: 30px;
+      color: #000000;
+      font-family: $mainFont;
+      font-size: 14px;
+      font-weight: 400;
+      a{
+        color: #000000;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 400;
+        &:hover{
+          color: #000000;
+        }
+      }
+    }
+  }
+  &-aside{
+    li{
+      display: inline-block;
+    }
+  }
+  &-logo{
+    > div{
+      text-align: center;
+      margin-bottom: 15px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+.aside-crimea-right{
+    color: #fefefe;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 400;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 20px 0 20px 30px;
+    max-width: 256px;
+    display: block;
+    background: url("../img/bg_as_r.png") no-repeat;
+    padding-left: 54px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      position: relative;
+      top: -40px;
+      margin-bottom: 0;
+    }
+    a{
+      margin-top: 23px;
+      display: inline-block;
+      font-size: 13px;
+      color: #fefefe;
+      font-family: $mainFont;
+      text-decoration: underline;
+    }
+  }
+
+//----------------------------------------------------//
+//delivery					 				      //
+//----------------------------------------------------//
+.delivery{
+  .gallery-header{
+    margin-bottom: 30px;
+  }
+  &-opt{
+    color: #84151f;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 400;
+    a{
+      color: #84151f;
+      font-family: $mainFont;
+      font-size: 14px;
+      font-weight: 400;
+      &:hover{
+        color: #84151f;
+      }
+    }
+  }
+  &-row{
+    margin-bottom: 20px;
+  }
+  &-list{
+    margin-bottom: 50px;
+    a{
+      color: #84151f;
+      font-family: $mainFont;
+      font-size: 14px;
+      font-weight: 700;
+      &:hover{
+        color: #84151f;
+      }
+    }
+    span{
+      color: #84151f;
+      font-weight: 700;
+    }
+  }
+}
+
+
 
 
 

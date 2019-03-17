@@ -90,5 +90,25 @@ $(document).ready(function () {
         $('#grid-view').addClass('active');
     });
 
+    $('.btn_checkin').on('click', function(){
+        $('#enterModal').attr('class', 'modal fade');
+        $('#enterModal').attr('style', 'display: none;');
+        $('#enterModal').attr('aria-hidden', 'true');
+        $('body').removeClass("modal-open");
+        $('body').attr('style', "");
+        $('.modal-backdrop.fade.show').remove();
+        console.log('Open checkin from enter')
+    })
+
+
+
+    var pathname = window.location.pathname;
+    $('.header-link').each(function () {
+        var attr = $(this).attr('href');
+        var entry = pathname.indexOf(attr);
+        if (entry > 0) {
+            $(this).addClass('active');
+        }
+    });
 });
 
