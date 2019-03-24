@@ -76,12 +76,12 @@
                     </div>
                     <div class="col-lg-2 col-md-3 col-6">
                         <ul class="header-top-list d-none d-md-flex">
-                            <li><a href="#" data-toggle="modal" data-target="#enterModal" id="111">Вход</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#enterModal">Вход</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#checkinModal">Регистрация</a></li>
                         </ul>
 
                         <div id="cart">
-                            <a id="cart-link">
+                            <a id="cart-link" data-toggle="modal" data-target="#cartModal">
                                 <div class="h4-style">Корзина:</div>
                                 <div id="cart-total">
                                     <span class="cart-total-items">Товаров:</span>
@@ -486,7 +486,6 @@
                     </div>
                     <input type="submit" value="Войти" class="btn_login">
                     <a href="#" class="btn_checkin" data-toggle="modal" data-target="#checkinModal">Регистрация</a>
-                    <!--<a href="#" class="btn_checkin" >Регистрация</a>-->
                     <a href="#" class="forgotten_pass">Забыли пароль?</a>
                 </form>
             </div>
@@ -527,6 +526,82 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="cart-successful">
+                    <div class="cart-successful-title"><i class="fa fa-check-square-o" aria-hidden="true"></i> Товар добавлен в корзину</div>
+                    <div class="cart-successful-info">
+                        <div class="cart-successful-img">
+                            <a href="#"><img src="img/c_1.png" alt="photo" class="img-fluid" class="img-fluid"></a>
+                        </div>
+                        <div class="cart-successful-wrap">
+                            <div class="cart-successful-name">
+                                <a href="#">Альбом д/скрапбукинга "Стрекозы" (5страниц+кольца) 20х20см </a>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>Артикул: <span>АМВУ-4692</span></li>
+                                <li>Изготовитель: <span>Украина</span></li>
+                            </ul>
+                            <form action="#">
+                                <div class="option-button-qty">
+                                    <span class="quan-minus"><span>-</span></span>
+                                    <input type="text" size="2" name="" id="" data-quan-minimum="1" value="1">
+                                    <span class="quan-plus"><span>+</span></span>
+                                </div>
+                            </form>
+                            <div class="product-price">
+                                <span class="current-price">74 <span>грн</span></span>
+                            </div>
+                        </div>
+
+                        <div class="cart-successful-remove">
+                            <img src="img/remove.png" alt="Удалить" title="Удалить" onclick="">
+                        </div>
+
+                    </div>
+                    <div class="cart-successful-info">
+                        <div class="cart-successful-img">
+                            <a href="#"><img src="img/c_1.png" alt="photo" class="img-fluid"></a>
+                        </div>
+                        <div class="cart-successful-wrap">
+                            <div class="cart-successful-name">
+                                <a href="#">Альбом д/скрапбукинга "Стрекозы" (5страниц+кольца) 20х20см </a>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>Артикул: <span>АМВУ-4692</span></li>
+                                <li>Изготовитель: <span>Украина</span></li>
+                            </ul>
+                            <form action="#">
+                                <div class="option-button-qty">
+                                    <span class="quan-minus"><span>-</span></span>
+                                    <input type="text" size="2" name="" id="" data-quan-minimum="1" value="1">
+                                    <span class="quan-plus"><span>+</span></span>
+                                </div>
+                            </form>
+                            <div class="product-price">
+                                <span class="current-price">74 <span>грн</span></span>
+                            </div>
+                        </div>
+
+                        <div class="cart-successful-remove">
+                            <img src="img/remove.png" alt="Удалить" title="Удалить" onclick="">
+                        </div>
+
+                    </div>
+
+                    <div class="checkout">
+                        <a href="#" class="checkbut"><i class="fa fa-chevron-left" aria-hidden="true"></i> Продолжить покупки</a>
+                        <a href="#" class="redbutton">Оформить заказ <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
