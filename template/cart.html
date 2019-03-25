@@ -1,0 +1,153 @@
+@@include('template/layout/header.html')
+<main class="content">
+    <div class="container">
+        <div class="row row-bg">
+            <div class="col">
+                <div class="row">
+                    @@include('template/blocks/breadcrumb.html')
+                </div>
+
+                <section class="cart">
+                    <div class="gallery-header">Оформление заказа</div>
+                    <ul class="cart-list">
+                        <li class="cart-item active">01. Ваш заказ</li>
+                        <li class="cart-item">02. Личные данные</li>
+                        <li class="cart-item">03. Адрес</li>
+                        <li class="cart-item">04. Доставка</li>
+                        <li class="cart-item">05. Оплата</li>
+                    </ul>
+                    <form action="#" id="checkout_form" method="post" enctype="multipart/form-data">
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <td class="text-center">Фото</td>
+                                <td class="text-left">Наименование</td>
+                                <td class="text-center">Артикул</td>
+                                <td class="text-center">Цена</td>
+                                <td class="text-center">Колличество</td>
+                                <td class="text-center"></td>
+                                <td class="text-center">К оплате</td>
+                                <td class="text-center"></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="table-cart">
+                                <td class="text-center">
+                                    <div class="cart-successful-img">
+                                        <a href="#"><img src="img/c_1.png" alt="photo" class="img-fluid"></a>
+                                    </div>
+                                </td>
+                                <td class="text-left">
+                                    <div class="cart-successful-name">
+                                        <a href="#">Акварель Белые Ночи жидкая в тюбиках
+                                            10 мл </a>
+                                    </div>
+                                    <ul class="list-unstyled">
+
+                                        <li>Цвет: <span>Кадмий красный светлый </span></li>
+                                    </ul>
+                                </td>
+                                <td class="text-center td-text-text">
+                                    <ul class="list-unstyled">
+                                        <li><span>АМВУ-4692</span></li>
+                                    </ul>
+                                </td>
+                                <td class="text-center">
+                                    <div class="product-price">
+                                        <span class="current-price">74 <span>грн</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <form action="#">
+                                        <div class="option-button-qty">
+                                            <span class="quan-minus"><span>-</span></span>
+                                            <input type="text" size="2" name="" id="" data-quan-minimum="1" value="1">
+                                            <span class="quan-plus"><span>+</span></span>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="text-center td-text-text">
+                                    <div class="cart-successful-remove">
+                                    <img src="img/remove_black.png" alt="Удалить" title="Удалить" onclick="">
+                                    </div>
+                                </td>
+                                <td class="text-center td-last">
+                                    <div class="product-price product-price-total">
+                                        <span class="current-price">74 <span>грн</span></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="table-cart">
+                                <td class="text-center">
+                                    <div class="cart-successful-img">
+                                        <a href="#"><img src="img/c_1.png" alt="photo" class="img-fluid"></a>
+                                    </div>
+                                </td>
+                                <td class="text-left">
+                                    <div class="cart-successful-name">
+                                        <a href="#">Акварель Белые Ночи жидкая в тюбиках
+                                            10 мл </a>
+                                    </div>
+                                    <ul class="list-unstyled">
+
+                                        <li>Цвет: <span>Кадмий красный светлый </span></li>
+                                    </ul>
+                                </td>
+                                <td class="text-center td-text-text">
+                                    <ul class="list-unstyled">
+                                        <li><span>АМВУ-4692</span></li>
+                                    </ul>
+                                </td>
+                                <td class="text-center">
+                                    <div class="product-price">
+                                        <span class="current-price">74 <span>грн</span></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <form action="#">
+                                        <div class="option-button-qty">
+                                            <span class="quan-minus"><span>-</span></span>
+                                            <input type="text" size="2" name="" id="" data-quan-minimum="1" value="1">
+                                            <span class="quan-plus"><span>+</span></span>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="text-center td-text-text">
+                                    <div class="cart-successful-remove">
+                                        <img src="img/remove_black.png" alt="Удалить" title="Удалить" onclick="">
+                                    </div>
+                                </td>
+                                <td class="text-center td-last">
+                                    <div class="product-price product-price-total">
+                                        <span class="current-price">74 <span>грн</span></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <hr class="table-line">
+                        <div class="row">
+                            <div class="col">
+                                <div id="basket-text-price">
+                                    <span class="total-price text-price">ИТОГО, К ОПЛАТЕ:  </span>
+                                    <span class="total-price number-price">74<span> грн</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <a href="#" class="checkbut"><i class="fa fa-chevron-left" aria-hidden="true"></i> Продолжить покупки</a>
+                            <a href="#" class="redbutton">Оформить заказ <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                    </form>
+
+                </section>
+
+
+            </div>
+
+        </div>
+    </div>
+</main>
+@@include('template/layout/footer.html')
