@@ -1,0 +1,54 @@
+@@include('template/layout/header.html')
+<main class="content">
+    <div class="container">
+        <div class="row row-bg">
+            <div class="col">
+                <div class="row">
+                    @@include('template/blocks/breadcrumb.html')
+                </div>
+
+                <section class="cart">
+                    <div class="gallery-header">Оформление заказа</div>
+                    <ul class="cart-list">
+                        <li class="cart-item past">01. Ваш заказ</li>
+                        <li class="cart-item past">02. Личные данные</li>
+                        <li class="cart-item past">03. Адрес</li>
+                        <li class="cart-item past">04. Доставка</li>
+                        <li class="cart-item active">05. Оплата</li>
+                    </ul>
+
+                    <form action="#" id="checkout_form" method="post" enctype="multipart/form-data" class="cart-form">
+                        <div class="checkout-form-wrap">
+                            <ul class="box-filter row">
+                                <li class="col-lg-4">
+                                    <input type="radio" name="payment" value="Наличными курьеру" id="filter01">
+                                    <label for="filter01">Наличными курьеру </label>
+                                </li>
+                                <li class="col-lg-4">
+                                    <input type="radio" name="payment" value="Наложенный платеж" id="filter02">
+                                    <label for="filter02">Наложенный платеж</label>
+                                </li>
+                                <li class="col-lg-4">
+                                    <input type="radio" name="payment" value="На карту ПриватБанка" id="filter03">
+                                    <label for="filter03">На карту ПриватБанка</label>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <hr class="table-line">
+
+                        <div class="checkout">
+                            <a href="#" class="checkbut"><i class="fa fa-chevron-left" aria-hidden="true"></i> Продолжить покупки</a>
+                            <a href="#" class="redbutton">Оформить заказ <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                    </form>
+
+                </section>
+
+
+            </div>
+
+        </div>
+    </div>
+</main>
+@@include('template/layout/footer.html')

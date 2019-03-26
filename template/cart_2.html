@@ -1,0 +1,46 @@
+@@include('template/layout/header.html')
+<main class="content">
+    <div class="container">
+        <div class="row row-bg">
+            <div class="col">
+                <div class="row">
+                    @@include('template/blocks/breadcrumb.html')
+                </div>
+
+                <section class="cart">
+                    <div class="gallery-header">Оформление заказа</div>
+                    <ul class="cart-list">
+                        <li class="cart-item past">01. Ваш заказ</li>
+                        <li class="cart-item past">02. Личные данные</li>
+                        <li class="cart-item active">03. Адрес</li>
+                        <li class="cart-item">04. Доставка</li>
+                        <li class="cart-item">05. Оплата</li>
+                    </ul>
+
+
+                    <form action="#" id="checkout_form" method="post" enctype="multipart/form-data" class="cart-form">
+                        <div class="checkout-form-wrap">
+                            <div class="form-group required form-group-address">
+                                <label class="control-label" for="input-fname">Адрес доставки</label>
+                                <input type="text" name="" value="" id="input-fname" class="form-control">
+                            </div>
+
+                        </div>
+
+
+                        <hr class="table-line">
+
+                        <div class="checkout">
+                            <a href="#" class="checkbut"><i class="fa fa-chevron-left" aria-hidden="true"></i> Продолжить покупки</a>
+                            <a href="#" class="redbutton">Оформить заказ <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                    </form>
+
+                </section>
+
+
+            </div>
+
+        </div>
+    </div>
+</main>
+@@include('template/layout/footer.html')
